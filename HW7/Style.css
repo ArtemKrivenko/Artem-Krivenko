@@ -1,0 +1,165 @@
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+.container {background: black;
+    width: 100%;
+    height: 100%;}
+.header {width: 100%;
+    height: 655px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;}
+.header:hover .bulb{}
+.add-btn {position: absolute;
+    width: 264px;
+    height: 73px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+    top: 301px;
+    left: 570px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;}
+.add-btn:hover{transform: scale(1.05);
+    background-color: #FFFFFF;}
+.nft {color: #750505;
+    font-size: 16px;
+    text-transform: uppercase;}
+.bulb {content: '';
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;}
+.bulb:hover {transform: scale(0.5);}
+.b1{width: 137px;
+    height: 137px;
+    left: 74px;
+    top: 68px;}
+.b2{width: 25px;
+    height: 25px;
+    left: 91px;
+    top: 453px;}
+.b3{width: 51px;
+    height: 51px;
+    left: 238px;
+    top: 337px;}
+.b4{width: 42px;
+    height: 42px;
+    left: 454px;
+    top: 47px;}
+.b5{width: 42px;
+    height: 42px;
+    left: 1134px;
+    top: 294px;}
+.b6{width: 90px;
+    height: 90px;
+    left: 364px;
+    top: 484px;}
+.b7{width: 63px;
+    height: 63px;
+    left: 453px;
+    top: 1217px;}
+.b8{width: 90px;
+    height: 90px;
+    left: 895px;
+    top: 484px;}
+.b9{width: 83px;
+    height: 83px;
+    left: 1134px;
+    top: 68px;}
+.b10{width: 25px;
+    height: 25px;
+    left: 91px;
+    top: 453px;}
+.cards-wrapper{display: flex;
+    background: black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: contain;
+    min-height: 100vh;}
+.card {position: relative;
+    width: 178px;
+    height: 251px;
+    background: #3E3E3E;
+    border-radius: 12px;
+    margin: 43px;
+    transition: 3s;}
+img {position: absolute;
+    width: 165px;
+    height: 195px;
+    left: 3.77%;
+    top: 2.56%;
+    border-radius: 10px;
+    background: #FFFFFF;
+    filter: grayscale(1);
+    transition: display 5s;}
+img:hover {filter: grayscale(0);}
+.name {
+    position: absolute;
+    left: 9.43%;
+    right: 46.7%;
+    top: 6.41%;
+    bottom: 85.9%;
+    color: #FFFFFF;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    text-shadow: 3px 3px 3px black;}
+.description {
+    position: absolute;
+    left: 9.43%;
+    top: 75%;
+    color: #FFFFFF;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.04em;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);}
+.delete-btn {
+    position : relative;
+    top: 230px;
+    border: none;
+    font-size: 20px;
+    display: none;
+    border-radius: 45px;
+    width: 100%;
+    transition: transform 4s;}
+.delete-btn::before {
+    content: '';
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000000;
+    border-radius: 40px;
+    mix-blend-mode: difference;
+    background: #000000;
+    cursor: pointer;
+}
+.delete-btn:hover::before{
+    background:white;
+    width: 100%;
+border: white;
+    border-radius: 15px;
+}
+.delete-btn .btn-text{
+    color: #FFFFFF;
+    border: #FFFFFF;
+    border-radius: 15px;
+    mix-blend-mode: difference;
+    cursor: pointer;}
+.card:hover .delete-btn{
+    display: block;
+    transition:  4s;}
